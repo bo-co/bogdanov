@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+@media (min-width : 721px) and (max-width : 960px) {
+	div.container > nav {
+		height : calc(var(--vh, 1vh) * 100 - 100px);
+		}
+		
+	div.container > article > div.swiper-main > div {
+		bottom : calc(100vh - var(--vh, 1vh) * 100 + 40px);
+		}
+	}
+
+@media (min-width : 481px) and (max-width : 720px) {
+	div.container > nav {
+		height : calc(var(--vh, 1vh) * 100 - 90px);
+		}
+		
+	div.container > article > div.swiper-main > div {
+		bottom : calc(100vh - var(--vh, 1vh) * 100 + 30px);
+		}
+	}
+	
+@media (max-width : 480px) {
+	div.container > nav {
+		height : calc(var(--vh, 1vh) * 100 - 80px);
+		}
+		
+	div.container > article > div.swiper-main > div {
+		bottom : calc(100vh - var(--vh, 1vh) * 100 + 20px);
+		}
+	}
