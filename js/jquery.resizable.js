@@ -3,28 +3,16 @@
 var aside = $("div.container > div.workspace > div.aside"),
 	asideWidth = null;
 	
-$(document).ready(function() {
-	
+$(document).ready(function() {	
 	asideWidth = aside.width();
-	
 	aside.resizable({
 		handles : "e",
-		minWidth : 0,
-		resize : function() {
-			if ($(this).width()!== 0) {					
-				$(".ui-resizable-e").removeClass("zero");
-				}
-			else {
-				$(".ui-resizable-e").addClass("zero");
-				}
-			}
+		minWidth : 0
 		});
-
-	if ($("div.container > div.workspace > div.aside > div.ui-resizable-handle").lenght !== 0) {
-		$("div.container > div.workspace > div.aside > div.ui-resizable-handle").append('<ul><li class="l"></li><li class="r"></li></ul>');
+	if (aside.find("div.ui-resizable-handle").lenght !== 0) {
+		aside.find("div.ui-resizable-handle").append('<ul><li></li><li></li></ul>');
 		}
-		
-	$('div.container > div.workspace > div.aside > div.ui-resizable-handle > ul > li.l').on('click', function() {
+	aside.find("div.ui-resizable-handle > ul > li:first-child").on("click", function() {
 		if (aside.width() > asideWidth) {
 			aside.width(asideWidth);
 			}
@@ -32,15 +20,13 @@ $(document).ready(function() {
 			aside.width(0);
 			}
 		});
-		
-	$('div.container > div.workspace > div.aside > div.ui-resizable-handle > ul > li.r').on('click', function() {
+	aside.find("div.ui-resizable-handle > ul > li:last-child").on("click", function() {
 		if (aside.width() >= asideWidth) {
-			aside.width(aside.parent("div").width());
+			aside.width(aside.parent().width());
 			}
 		else {
 			aside.width(asideWidth);
 			}
 		});
-		
    	return false;
 	});
