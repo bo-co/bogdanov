@@ -18,6 +18,30 @@ div.container {
 	min-height : 320px;
 	overflow : hidden;
 	}
+	
+div.container > span {
+	display : none;
+	}
+	
+div.container.opened > div.workspace {
+  	-webkit-filter : url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8ZmlsdGVyIGlkPSJibHVyIj4KICAgICAgICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIxMiIgLz4KICAgIDwvZmlsdGVyPgo8L3N2Zz4=#blur");
+ 	-webkit-filter : blur(3px);
+   		-ms-filter : url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8ZmlsdGVyIGlkPSJibHVyIj4KICAgICAgICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIxMiIgLz4KICAgIDwvZmlsdGVyPgo8L3N2Zz4=#blur");
+ 		-ms-filter : blur(3px);   
+			filter : url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8ZmlsdGVyIGlkPSJibHVyIj4KICAgICAgICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIxMiIgLz4KICAgIDwvZmlsdGVyPgo8L3N2Zz4=#blur");
+			filter : blur(3px);		
+	}
+	
+div.container.opened > span {
+	display : block;
+	position : absolute;
+	top : 0;
+	left : 0;
+	z-index : 100;
+	width : calc(100% - 50px);
+	height : 100%;
+	background-color : rgba(0, 0, 0, 0.25);	
+	}
 
 /* 60px — базовый отступ 
 внутренние и внешние отступы делятся или умножаются на 2

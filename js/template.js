@@ -11,11 +11,17 @@ function loadCSS(source, type) {
 	}
 	
 function resize() {
-	if (window.innerWidth < 721) {
-		asideWidth = 0;
+	if (window.innerWidth > 1200) {
+		asideWidth = Math.round(aside.parent().innerWidth()*0.3);
+		}
+	else if (window.innerWidth < 1201 && window.innerWidth > 960) {
+		asideWidth = Math.round(aside.parent().innerWidth()*0.35);
+		}
+	else if (window.innerWidth < 961 && window.innerWidth > 720) {
+		asideWidth = Math.round(aside.parent().innerWidth()*0.4);
 		}
 	else {
-		asideWidth = Math.round(aside.parent().innerWidth()*0.3);
+		asideWidth = 0;
 		}
 	if (!vhCSS) {
 		loadCSS('css/vh.css?' + $.now(), 'stylesheet');
@@ -35,7 +41,7 @@ $(document).ready(function() {
 		aside.find("div.ui-resizable-handle").append('<ul><li></li><li></li></ul>');
 		}
 	aside.find("div.ui-resizable-handle > ul > li:first-child").on("click", function() {
-		if (aside.width() > asideWidth) {
+		if (Math.round(aside.width()) > asideWidth) {
 			aside.animate({
   				width: asideWidth
 				}, 250);
@@ -47,7 +53,7 @@ $(document).ready(function() {
 			}
 		});
 	aside.find("div.ui-resizable-handle > ul > li:last-child").on("click", function() {
-		if (aside.width() >= asideWidth) {
+		if (Math.round(aside.width()) >= asideWidth) {
 			aside.animate({
   				width: aside.parent().innerWidth()
 				}, 250);
@@ -58,7 +64,7 @@ $(document).ready(function() {
 				}, 250);
 			}
 		});
-	$("div.container > div.nav > ul").on("click", function() {
+	$("div.container > div.panel > ul").on("click", function() {
 		if ($("div.container").hasClass("opened")) {
 			$("div.container").removeClass("opened").addClass("closed");
 			}
