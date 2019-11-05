@@ -15,39 +15,9 @@ div.container > div.workspace > div {
 	overflow : visible !important;
 	}
 	
-div.container > div.workspace > div + div {
+div.container > div.workspace > div.aside + div {
 	flex : 1;
 	background-color: rgba(240, 240, 240, 1);
-	}
-	
-@media (min-width : 1201px) {
-	div.container > div.workspace > div:first-child {
-		width : 30%;
-		}
-	}
-	
-@media (min-width : 961px) and (max-width : 1200px) {
-	div.container > div.workspace > div:first-child {
-		width : 35%;
-		}
-	}
-
-@media (min-width : 721px) and (max-width : 960px) {
-	div.container > div.workspace > div:first-child {
-		width : 40%;
-		}
-	}
-		
-@media (min-width : 481px) and (max-width : 720px) {
-	div.container > div.workspace > div:first-child {
-		width : 0;
-		}	
-	}
-	
-@media (max-width : 480px) {
-	div.container > div.workspace > div:first-child {
-		width : 0;
-		}	
 	}
 	
 div.container > div.workspace > div.aside > div.ui-resizable-handle {
@@ -94,4 +64,34 @@ div.container > div.workspace > div.aside > div.ui-resizable-handle > ul > li:fi
 	
 div.container > div.workspace > div.aside > div.ui-resizable-handle > ul > li:last-child {
 	background-color : rgba(120, 120, 120, 1);
+	}
+	
+@media (min-width : 1201px) {
+	div.container > div.workspace > div.aside {
+		width : 30%;
+		}
+	}
+	
+@media (min-width : 961px) and (max-width : 1200px) {
+	div.container > div.workspace > div.aside {
+		width : 35%;
+		}
+	}
+
+@media (min-width : 721px) and (max-width : 960px) {
+	div.container > div.workspace > div.aside {
+		width : 40%;
+		}
+	}
+		
+@media (min-width : 481px) and (max-width : 720px) {
+	div.container > div.workspace > div.aside {
+		width : 0;
+		}	
+	}
+	
+@media (max-width : 480px) {
+	div.container > div.workspace > div.aside {
+		width : 0;
+		}	
 	}
