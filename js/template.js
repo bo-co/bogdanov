@@ -11,7 +11,12 @@ function loadCSS(source, type) {
 	}
 	
 function resize() {
-	asideWidth = Math.round(aside.parent().innerWidth()*0.3);
+	if (window.innerWidth < 721) {
+		asideWidth = 0;
+		}
+	else {
+		asideWidth = Math.round(aside.parent().innerWidth()*0.3);
+		}
 	if (!vhCSS) {
 		loadCSS('css/vh.css?' + $.now(), 'stylesheet');
 		vhCSS = true;
