@@ -42,7 +42,7 @@ $(document).ready(function() {
 	if (aside.find("div.ui-resizable-handle").lenght !== 0) {
 		aside.find("div.ui-resizable-handle").append('<ul><li></li><li></li></ul>');
 		}
-	aside.find("div.ui-resizable-handle > ul > li:first-child").on("mousedown touchstart", function() {
+	aside.find("div.ui-resizable-handle > ul > li:first-child").on("mousedown", function() {
 		if (Math.round(aside.width()) > asideWidth) {
 			aside.animate({
   				width: asideWidth
@@ -54,7 +54,7 @@ $(document).ready(function() {
 				}, 250);
 			}
 		});
-	aside.find("div.ui-resizable-handle > ul > li:last-child").on("mousedown touchstart", function() {
+	aside.find("div.ui-resizable-handle > ul > li:last-child").on("mousedown", function() {
 		if (Math.round(aside.width()) >= asideWidth) {
 			aside.animate({
   				width: aside.parent().innerWidth()
