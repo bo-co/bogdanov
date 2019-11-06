@@ -10,12 +10,11 @@ div.container > nav {
 	height : 100%;
 	background-color: rgba(80, 80, 80, 1);
 	overflow : hidden;
-	transition : right 0.5s ease;
 	}
 	
-div.container.opened > nav {
+/* div.container.opened > nav {
 	right : 50px;
-	}
+	} */
 	
 @media (min-width : 1201px) {
 
