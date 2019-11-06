@@ -38,7 +38,7 @@ div.container > div.panel > ul > li {
 	background-color : rgba(0, 0, 0, 1);
 	transition : width 0.25s ease;
   	animation-timing-function : ease;
-  	animation-duration : .5s;
+  	animation-duration : .25s;
 	}
 	
 div.container > div.panel > ul > li:first-child,
