@@ -4,7 +4,7 @@ div.container > div.workspace {
 	display : flex;
 	width : calc(100% - 50px);
 	height : 100vh;
-	background-color: rgba(220, 220, 220, 1);
+	background-color: rgba(80, 80, 80, 1);
 	overflow : hidden;
 	}
 	
@@ -12,7 +12,7 @@ div.container > div.workspace > div {
 	position : relative;
 	height : 100%;
 	background-color: rgba(200, 200, 200, 1);
-	overflow : visible !important;
+	/* overflow : visible !important; */
 	}
 	
 div.container > div.workspace > div.aside + div {
