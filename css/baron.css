@@ -9,6 +9,7 @@ div.container > div.workspace > div > div.baron {
 	
 div.container > div.workspace > div > div.baron > div.baron__scroller {
     width : 100%;
+    min-width : 270px !important;
     height : 100%;
     overflow-y : scroll;
     -ms-overflow-style : none;
