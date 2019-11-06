@@ -27,8 +27,10 @@ function resize() {
 		loadCSS('css/vh.css?' + $.now(), 'stylesheet');
 		vhCSS = true;
 		}
-	let vh = window.innerHeight * 0.01;
-	document.documentElement.style.setProperty('--vh', `${vh}px`);
+	setTimeout(function() {
+		let vh = window.innerHeight * 0.01;
+		document.documentElement.style.setProperty('--vh', `${vh}px`);
+		}, 50);
 	}
 
 $(document).ready(function() {	
