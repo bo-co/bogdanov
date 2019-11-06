@@ -10,7 +10,7 @@ div.container > div.workspace {
 	
 div.container > div.workspace > div {
 	position : relative;
-	height : 100%;
+	height : 80%;
 	background-color: rgba(200, 200, 200, 1);
 	/* overflow : visible !important; */
 	}
