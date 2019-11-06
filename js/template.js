@@ -71,13 +71,13 @@ $(document).ready(function() {
 			$("div.container").removeClass("opened").addClass("closed");
 			$("div.container > nav").animate({
   				right: Math.round(0 - $("div.container > nav").innerWidth() + 50)
-				}, 500);
+				}, 250);
 			}
 		else {
 			$("div.container").removeClass("closed").addClass("opened");
 			$("div.container > nav").animate({
   				right: 50
-				}, 500);
+				}, 250);
 			}	
 		});
    	return false;
