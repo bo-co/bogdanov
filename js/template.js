@@ -37,7 +37,11 @@ $(document).ready(function() {
 	resize();
 	aside.resizable({
 		handles : "e",
-		minWidth : 0
+		minWidth : 0,
+		resize : function() {
+			window.baron__aside.update();
+			window.baron__content.update();
+			}
 		});
 	if (aside.find("div.ui-resizable-handle").lenght !== 0) {
 		aside.find("div.ui-resizable-handle").append('<ul><li></li><li></li></ul>');
@@ -82,5 +86,18 @@ $(document).ready(function() {
 				}, 250);
 			}	
 		});
+    
+    window.baron__aside = baron({
+    	root: '.baron__aside',
+        scroller: '.baron__scroller',
+        bar: '.baron__bar'
+        });
+    
+    window.baron__content = baron({
+    	root: '.baron__content',
+        scroller: '.baron__scroller',
+        bar: '.baron__bar'
+        });
+   	
    	return false;
 	});
