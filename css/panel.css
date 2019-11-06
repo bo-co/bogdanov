@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 div.container > div.panel {
-	position : fixed;
+	position : absolute;
 	top : 0;
 	right : 0;
 	z-index : 120;
