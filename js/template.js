@@ -71,6 +71,8 @@ $(document).ready(function() {
   				width: asideWidth
 				}, 250);
 			}
+		window.baron__aside.update();
+		window.baron__content.update();
 		});
 	$("div.container > div.panel > ul").on("click", function() {
 		if ($("div.container").hasClass("opened")) {
@@ -84,7 +86,9 @@ $(document).ready(function() {
 			$("div.container > nav").animate({
   				right: 50
 				}, 250);
-			}	
+			}
+		window.baron__aside.update();
+		window.baron__content.update();	
 		});
     
     window.baron__aside = baron({
