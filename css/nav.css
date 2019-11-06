@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 div.container > nav {
-	position : fixed;
+	position : absolute;
 	top : 0;
 	right : calc(50px - 100%);
 	z-index : 100;
