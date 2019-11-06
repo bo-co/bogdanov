@@ -69,9 +69,15 @@ $(document).ready(function() {
 	$("div.container > div.panel > ul").on("click", function() {
 		if ($("div.container").hasClass("opened")) {
 			$("div.container").removeClass("opened").addClass("closed");
+			$("div.container > nav").animate({
+  				right: Math.round(0 - $("div.container > nav").innerWidth() + 50)
+				}, 500);
 			}
 		else {
 			$("div.container").removeClass("closed").addClass("opened");
+			$("div.container > nav").animate({
+  				right: 50
+				}, 500);
 			}	
 		});
    	return false;
