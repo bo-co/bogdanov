@@ -1,35 +1,35 @@
 @charset "UTF-8";
 
-div.container > div.workspace > div > ul > li > footer {
+div.container > div.workspace > div.content > div.baron > div.baron__scroller > ul > li > footer {
 	background-color: rgba(60, 60, 60, 1);
 	}
 	
 @media (min-width : 1201px) {
-	div.container > div.workspace > div > ul > li > footer {
+	div.container > div.workspace > div.content > div.baron > div.baron__scroller > ul > li > footer {
 		padding : 60px 0;
 		}
 	}
 		
 @media (min-width : 961px) and (max-width : 1200px) {
-	div.container > div.workspace > div > ul > li > footer {
+	div.container > div.workspace > div.content > div.baron > div.baron__scroller > ul > li > footer {
 		padding : 50px 0;
 		}
 	}
 
 @media (min-width : 721px) and (max-width : 960px) {
-	div.container > div.workspace > div > ul > li > footer {
+	div.container > div.workspace > div.content > div.baron > div.baron__scroller > ul > li > footer {
 		padding : 40px 0;
 		}
 	}
 
 @media (min-width : 481px) and (max-width : 720px) {
-	div.container > div.workspace > div > ul > li > footer {
+	div.container > div.workspace > div.content > div.baron > div.baron__scroller > ul > li > footer {
 		padding : 30px 0;
 		}
 	}
 
 @media (max-width : 480px) {
-	div.container > div.workspace > div > ul > li > footer {
+	div.container > div.workspace > div.content > div.baron > div.baron__scroller > ul > li > footer {
 		padding : 20px 0;
 		}
 	}
