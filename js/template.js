@@ -51,12 +51,18 @@ $(document).ready(function() {
 		if (Math.round(aside.width()) > asideWidth) {
 			aside.animate({
   				width: asideWidth
-				}, 250);
+				}, 250, function() {
+				window.baron__aside.update();
+				window.baron__content.update();
+  				});
 			}
 		else {
 			aside.animate({
   				width: 0
-				}, 250);
+				}, 250, function() {
+				window.baron__aside.update();
+				window.baron__content.update();
+  				});
 			}
 		});
 	aside.find("div.ui-resizable-handle > ul > li:last-child").on("touchstart mousedown", function(e) {
@@ -64,15 +70,19 @@ $(document).ready(function() {
 		if (Math.round(aside.width()) >= asideWidth) {
 			aside.animate({
   				width: aside.parent().innerWidth()
-				}, 250);
+				}, 250, function() {
+				window.baron__aside.update();
+				window.baron__content.update();
+  				});
 			}
 		else {
 			aside.animate({
   				width: asideWidth
-				}, 250);
+				}, 250, function() {
+				window.baron__aside.update();
+				window.baron__content.update();
+  				});
 			}
-		window.baron__aside.update();
-		window.baron__content.update();
 		});
 	$("div.container > div.panel > ul").on("click", function() {
 		if ($("div.container").hasClass("opened")) {
@@ -87,21 +97,16 @@ $(document).ready(function() {
   				right: 50
 				}, 250);
 			}
-		window.baron__aside.update();
-		window.baron__content.update();	
-		});
-    
+		});  
     window.baron__aside = baron({
-    	root: '.baron__aside',
-        scroller: '.baron__scroller',
-        bar: '.baron__bar'
+    	root: "div.container > div.workspace > div > div.baron__aside",
+        scroller: "div.container > div.workspace > div > div.baron > div.baron__scroller",
+        bar: "div.container > div.workspace > div > div.baron > div.baron__track > div.baron__bar"
         });
-    
     window.baron__content = baron({
-    	root: '.baron__content',
-        scroller: '.baron__scroller',
-        bar: '.baron__bar'
+    	root: "div.container > div.workspace > div > div.baron__content",
+        scroller: "div.container > div.workspace > div > div.baron > div.baron__scroller",
+        bar: "div.container > div.workspace > div > div.baron > div.baron__track > div.baron__bar"
         });
-   	
    	return false;
 	});
