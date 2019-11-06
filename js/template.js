@@ -22,7 +22,7 @@ function resize() {
 		}
 	else {
 		asideWidth = 0;
-		}				
+		}			
 	if (!vhCSS) {
 		loadCSS('css/vh.css?' + $.now(), 'stylesheet');
 		vhCSS = true;
