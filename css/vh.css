@@ -1,5 +1,5 @@
 @charset "UTF-8";
 
 div.container {
-	height : calc(var(--vh, 1vh) * 100 - 40px);
+	height : calc(var(--vh, 1vh) * 100);
 	}
