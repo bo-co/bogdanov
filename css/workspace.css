@@ -73,11 +73,6 @@ div.container > div.workspace > div.aside > div.ui-resizable-handle > ul > li:fi
 	
 div.container > div.workspace > div.aside > div.ui-resizable-handle > ul > li:last-child {
 	background-color : rgba(120, 120, 120, 1);
-	opacity : 0;
-	}
-	
-div.container > div.workspace > div.aside.min > div.ui-resizable-handle > ul > li:last-child {
-	opacity : 1;
 	}
 	
 /* resizable -- конец */
@@ -175,6 +170,14 @@ div.container > div.workspace > div > div.header {
 	div.container > div.workspace > div.content > div.header {
 		display : none;
 		}
+		
+	div.container > div.workspace > div.aside > div.ui-resizable-handle > ul > li:last-child {
+		opacity : 0;
+		}
+	
+	div.container > div.workspace > div.aside.min > div.ui-resizable-handle > ul > li:last-child {
+		opacity : 1;
+		}
 	}
 	
 @media (min-width : 961px) and (max-width : 1200px) {
@@ -198,6 +201,14 @@ div.container > div.workspace > div > div.header {
 	div.container > div.workspace > div.content > div.header {
 		display : none;
 		}
+		
+	div.container > div.workspace > div.aside > div.ui-resizable-handle > ul > li:last-child {
+		opacity : 0;
+		}
+	
+	div.container > div.workspace > div.aside.min > div.ui-resizable-handle > ul > li:last-child {
+		opacity : 1;
+		}
 	}
 
 @media (min-width : 721px) and (max-width : 960px) {
@@ -220,6 +231,14 @@ div.container > div.workspace > div > div.header {
 		
 	div.container > div.workspace > div.content > div.header {
 		display : none;
+		}
+		
+	div.container > div.workspace > div.aside > div.ui-resizable-handle > ul > li:last-child {
+		opacity : 0;
+		}
+	
+	div.container > div.workspace > div.aside.min > div.ui-resizable-handle > ul > li:last-child {
+		opacity : 1;
 		}
 	}
 		
