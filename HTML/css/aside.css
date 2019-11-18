@@ -67,7 +67,7 @@ aside > ul > li > a,
 aside > ul > li > ul > li > a {
 	display : block;
 	text-decoration : none;
-	color : rgba(170, 170, 170, 1);
+	color : rgba(180, 180, 180, 1);
 	transition : color .25s ease;	
 	}
 	
@@ -146,7 +146,7 @@ aside > ul > li > div + span::after {
     width : 10px;
     height : 2px;
     content : "";
-    background-color : rgba(170, 170, 170, 1);
+    background-color : rgba(180, 180, 180, 1);
     transition : all .25s ease;
 	}
 	
