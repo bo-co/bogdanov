@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family : "RobotoSlab";
+	font-display : swap;
+	src : 	local("Roboto Slab Light"), 
+			local("RobotoSlab-Light"),
+			url("RobotoSlabLight.eot"),
+			url("RobotoSlabLight.eot?#iefix")format("embedded-opentype"),
+			url("RobotoSlabLight.woff") format("woff"),
+			url("RobotoSlabLight.ttf") format("truetype");
+	font-style : normal;
+	font-weight : 300;
+	}
+
+@font-face {
+	font-family : "RobotoSlab";
+	font-display : swap;
+	src : 	local("Roboto Slab Regular"), 
+			local("RobotoSlab-Regular"),
+			url("RobotoSlabRegular.eot"),
+			url("RobotoSlabRegular.eot?#iefix")format("embedded-opentype"),
+			url("RobotoSlabRegular.woff") format("woff"),
+			url("RobotoSlabRegular.ttf") format("truetype");
+	font-style : normal;
+	font-weight : 400;
+	}
+
+@font-face {
+	font-family : "RobotoSlab";
+	font-display : swap;
+	src : 	local("Roboto Slab Bold"), 
+			local("RobotoSlab-Bold"),
+			url("RobotoSlabBold.eot"),
+			url("RobotoSlabBold.eot?#iefix")format("embedded-opentype"),
+			url("RobotoSlabBold.woff") format("woff"),
+			url("RobotoSlabBold.ttf") format("truetype");
+	font-style : normal;
+	font-weight : 600;
+	}

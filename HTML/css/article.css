@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+article {
+	position : relative;
+	width : 100%;
+	}
+	
+article > div.content {
+	position : inherit;
+	max-width : 960px;
+	margin : 0 auto;
+	padding : 0.5rem 1rem;
+	}
+	
+@media (min-width : 1201px) {
+	}
+	
+@media (min-width : 961px) and (max-width : 1200px) {
+	}
+	
+@media (min-width : 721px) and (max-width : 960px) {
+	}
+	
+@media (min-width : 481px) and (max-width : 720px) {
+	}
+	
+@media (max-width : 480px) {
+	}

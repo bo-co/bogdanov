@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+html {
+	font-weight : 400;
+	font-style : normal;
+	font-family : "Roboto", Arial, Tahoma, Verdana, sans-serif;	
+	}
+
+body {
+	background-color : rgba(255, 255, 255, 1);
+	color : rgba(30, 30, 30, 1);
+	font-size : 20px;
+	line-height : 1.45em;
+	}
+	
+b,
+strong {
+	font-weight : 600;
+	color : rgba(0, 0, 0, 1);
+	}
+	
+.header {
+	font-family : "RobotoSlab", Arial, Tahoma, Verdana, sans-serif;	
+	}
+
+.color-hover:hover,
+.color-before::before,
+.color-before::after {
+	color : rgba(77, 72, 188, 1);
+	}
+
+.bg-color-hover:hover,
+.bg-color-before::before,
+.bg-color-after::after,
+.baron__bar {
+	background-color : rgba(77, 72, 188, 1);
+	}
+	
+div.container {
+	position : relative;
+	width : 100%;
+	height : 100vh;
+	min-width : 320px;
+	min-height : 320px;
+	overflow : hidden;
+	}
+	
+div.container > span {
+	display : none;
+	}
+	
+div.container.opened > div.workspace {
+  	-webkit-filter : url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8ZmlsdGVyIGlkPSJibHVyIj4KICAgICAgICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIxMiIgLz4KICAgIDwvZmlsdGVyPgo8L3N2Zz4=#blur");
+ 	-webkit-filter : blur(3px);
+   		-ms-filter : url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8ZmlsdGVyIGlkPSJibHVyIj4KICAgICAgICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIxMiIgLz4KICAgIDwvZmlsdGVyPgo8L3N2Zz4=#blur");
+ 		-ms-filter : blur(3px);   
+			filter : url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8ZmlsdGVyIGlkPSJibHVyIj4KICAgICAgICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIxMiIgLz4KICAgIDwvZmlsdGVyPgo8L3N2Zz4=#blur");
+			filter : blur(3px);		
+	}
+	
+div.container.opened > span {
+	display : block;
+	position : absolute;
+	top : 0;
+	left : 0;
+	z-index : 100;
+	width : calc(100% - 50px);
+	height : 100%;
+	background-color : rgba(0, 0, 0, 0.25);	
+	}
+
+/* 60px — базовый отступ 
+внутренние и внешние отступы делятся или умножаются на 2
+120px — 60px — 30px */	
+@media (min-width : 1201px) {
+	html {
+		font-size : 60px;
+		}
+	}
+
+/* 50px — базовый отступ 
+внутренние и внешние отступы делятся или умножаются на 2
+100px — 50px — 25px */		
+@media (min-width : 961px) and (max-width : 1200px) {
+	html {
+		font-size : 50px;
+		}	
+	}
+
+/* 40px — базовый отступ 
+внутренние и внешние отступы делятся или умножаются на 2
+80px — 40px — 20px */		
+@media (min-width : 721px) and (max-width : 960px) {
+	html {
+		font-size : 40px;
+		}
+	}
+	
+/* 30px — базовый отступ 
+внутренние и внешние отступы делятся или умножаются на 2
+60px — 30px — 15px */		
+@media (min-width : 481px) and (max-width : 720px) {
+	html {
+		font-size : 30px;
+		}	
+	}
+
+/* 20px — базовый отступ 
+внутренние и внешние отступы делятся или умножаются на 2
+40px — 20px — 10px */		
+@media (max-width : 480px) {
+	html {
+		font-size : 20px;
+		}	
+	}

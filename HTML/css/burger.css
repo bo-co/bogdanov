@@ -1,0 +1,234 @@
+@charset "UTF-8";
+
+ul.burger {
+	position: absolute;
+	right : 0;
+	z-index: 10;
+	width: 50px;
+	height: 50px;
+	padding : 13px 10px;
+	margin : 0;
+	list-style : none;
+	cursor : pointer;
+	overflow : hidden;
+	background-color: rgba(220, 220, 220, 0);
+	}
+	
+ul.burger > li {
+	position : inherit;
+	left : 10px;
+	z-index : inherit;
+	width : 30px;
+	height : 2px;
+	background-color : rgba(0, 0, 0, 1);
+	transition : width 0.25s ease;
+  	animation-timing-function : ease;
+  	animation-duration : .25s;
+	}
+	
+ul.burger > li:first-child,
+ul.burger > li:nth-child(2) {
+	width : 25px;
+	top : calc(50% - 1px);
+	}
+	
+ul.burger > li:nth-child(3) {
+	top : 13px;
+	width : 15px;
+	}
+
+ul.burger > li:last-child {
+	bottom : 13px;
+	}
+
+ul.burger:hover > li:first-child,
+ul.burger:hover > li:nth-child(2),
+ul.burger:hover > li:nth-child(3),
+ul.burger > li:last-child,
+div.container.opened ul.burger > li { 
+	width : 30px; 
+	}
+
+div.container.closed ul.burger > li:first-child {
+	transform : rotate(0);  	
+  	animation-name : rotate-left-down;
+	}
+
+div.container.opened ul.burger > li:first-child {
+	transform : rotate(45deg);
+  	animation-name : rotate-left-up;
+	}
+
+@keyframes rotate-left-up {
+	0% {
+    	transform : rotate(0);
+  		}
+  	50% {
+    	transform : rotate(0);
+  		}
+  	100% {
+    	transform : rotate(45deg);
+  		}
+	}
+	
+@keyframes rotate-left-down {
+	0% {
+    	transform : rotate(45deg);
+  		}
+  	50% {
+    	transform : rotate(0);
+  		}
+  	100% {
+    	transform : rotate(0);
+  		}
+	}
+
+div.container.closed ul.burger > li:nth-child(2) {
+	transform : rotate(0);
+  	animation-name : rotate-right-down;
+	}
+	
+div.container.opened ul.burger > li:nth-child(2) { 
+	transform : rotate(-45deg);
+	animation-name : rotate-right-up;
+	}
+	
+@keyframes rotate-right-up {
+	0% {
+    	transform : rotate(0);
+  		}
+  	50% {
+    	transform : rotate(0);
+  		}
+  	100% {
+    	transform : rotate(-45deg);
+  		}
+	}
+	
+@keyframes rotate-right-down {
+	0% {
+    	transform : rotate(-45deg);
+  		}
+  	50% {
+    	transform : rotate(0);
+  		}
+  	100% {
+    	transform : rotate(0);
+  		}
+	}
+
+div.container.closed ul.burger > li:nth-child(3) { 
+	top : 13px;
+	transform : rotate(0);
+	animation-name : top-down;
+	}	
+	
+div.container.opened ul.burger > li:nth-child(3) { 
+	top : calc(50% - 1px);
+	transform : rotate(45deg);
+	animation-name : top-up;
+	}
+	
+@keyframes top-up {
+	0% {
+    	top : 13px;
+    	transform : rotate(0);
+  		}
+  	50% {
+    	top : calc(50% - 1px);
+    	transform : rotate(0);
+  		}
+  	100% {
+  		top : calc(50% - 1px);
+    	transform : rotate(45deg);
+  		}
+	}
+	
+@keyframes top-down {
+	0% {
+    	top : calc(50% - 1px);
+    	transform : rotate(45deg);
+  		}
+  	50% {
+    	top : calc(50% - 1px);
+    	transform : rotate(0);
+  		}
+  		
+  	100% {
+    	top : 13px;
+    	transform : rotate(0);
+  		}
+	}
+
+div.container.closed ul.burger > li:last-child { 
+	bottom : 13px;
+	transform : rotate(0);
+	animation-name : bottom-down;
+	}	
+	
+div.container.opened ul.burger > li:last-child { 
+	bottom : calc(50% - 1px);
+	transform : rotate(-45deg);
+	animation-name : bottom-up;
+	}
+	
+@keyframes bottom-up {
+	0% {
+    	bottom : 13px;
+    	transform : rotate(0);
+  		}
+  	50% {
+    	bottom : calc(50% - 1px);
+    	transform : rotate(0);
+  		}
+  	100% {
+  		bottom : calc(50% - 1px);
+    	transform : rotate(-45deg);
+  		}
+	}
+	
+@keyframes bottom-down {
+	0% {
+    	bottom : calc(50% - 1px);
+    	transform : rotate(-45deg);
+  		}
+  	50% {
+    	bottom : calc(50% - 1px);
+    	transform : rotate(0);
+  		}
+  		
+  	100% {
+    	bottom : 13px;
+    	transform : rotate(0);
+  		}
+	}
+
+@media (min-width : 1201px) {
+	ul.burger {
+		top : 0;
+		}	
+	}
+	
+@media (min-width : 961px) and (max-width : 1200px) {
+	ul.burger {
+		top : 0;
+		}	
+	}
+	
+@media (min-width : 721px) and (max-width : 960px) {
+	ul.burger {
+		top : 15px;
+		}
+	}
+		
+@media (min-width : 481px) and (max-width : 720px) {
+	ul.burger {
+		top : 10px;
+		}	
+	}
+
+@media (max-width : 480px) {
+	ul.burger {
+		top : 5px;
+		}
+	}
