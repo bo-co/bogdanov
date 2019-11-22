@@ -5,7 +5,6 @@ header {
 	width : 100%;
 	padding : 0.5rem 0;
 	background-color: rgba(255, 255, 255, 1);
-	box-shadow : 0 1px 5px 0 rgba(0, 0, 0, 0.05);
 	}
 	
 header::after {
@@ -20,11 +19,12 @@ header::after {
 header > div > a.logo,
 header > div > a.logo > span {
 	display : block;
+	position : relative;
 	}
 
 header > div > a.logo {
 	width : 8.5em;
-	height : 2em;
+	height : 1.8em;
 	margin : 0 auto;
 	}
 
@@ -37,7 +37,18 @@ header > div > a.logo > span {
 	
 header > div > a.logo > span {
 	background-position : 0 50%;
-	background-image : url("../img/logo.small.svg?091020191529");
+	background-image : url("../img/logo.svg?091020191529");
+	}
+	
+header > div > a.logo > span::after {
+    position : absolute;
+    right : 0;
+    top : calc(50% - 1.3em);
+    color : rgba(60, 66, 73, 1);
+    font-size : 0.7em;
+    line-height : 1.3em;
+    white-space : pre;
+    content : "Студия Андрея\AБогданова";
 	}
 	
 @media (min-width : 961px) {
