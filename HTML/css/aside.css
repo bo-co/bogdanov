@@ -1,39 +1,48 @@
 @charset "UTF-8";
 
-div.container > div.workspace > div > div.box > div.phone {
-	position : absolute;
-	bottom : 0;
-	left : 0;
-	z-index : 10;
-	width : 100%;
-	min-width : 270px;
-	height : 50px;
-	padding : 0 50px;
-	background-color : rgba(255, 255, 255, 1);
-	}
-	
-div.container > div.workspace > div > div.box > div.phone > a {
-	position : relative;
-	display : block;
-	max-width : 170px;
-	height : inherit;
-	margin : 0 auto;
-	font-size : 0.8em;
-	line-height : 50px;
-	text-decoration : none;
-	white-space : nowrap;
-	color : rgba(100, 100, 100, 1);
-	transition : color .25s ease;
-	}
-	
-div.container > div.workspace > div > div.box > div.phone > a:hover {
-	color : rgba(0, 0, 0, 1);
+aside {
+	padding : 1rem 0;
 	}
 
-aside {
+aside,
+div.container > div.workspace > div.aside > div.box > div.header {
 	width : 100%;
-	min-width : 270px;
-	padding : 1rem 0;
+	min-width : 13.5em;
+	}
+	
+div.container > div.workspace > div.aside > div.box > div.header {
+	padding : 0.5rem 0;
+	}
+	
+div.container > div.workspace > div.aside > div.box > div.header > a.logo {
+	width : 8.5em;
+	margin : 0 auto;
+	}
+	
+div.container > div.workspace > div.aside > div.box > div.header > a.logo > span {
+	position : relative;
+	width : 100%;
+	height : 100%;
+	background-repeat : no-repeat;
+	background-size : contain;
+	background-position : 0% 50%;
+	background-image : url("../img/logo.svg?091020191529");
+	}
+
+div.container > div.workspace > div.aside > div.box > div.header > a.logo,
+div.container > div.workspace > div.aside > div.box > div.header > a.logo > span {
+	display : block;
+	}
+	
+div.container > div.workspace > div.aside > div.box > div.header > a.logo > span::after {
+    position : absolute;
+    right : 0;
+    top : calc(50% - 1.3em);
+    color : rgba(60, 66, 73, 1);
+    font-size : 0.7em;
+    line-height : 1.3em;
+    white-space : pre;
+    content : "Студия Андрея\AБогданова";
 	}
 
 aside > ul,
@@ -45,12 +54,8 @@ aside > ul > li > ul {
 	}
 	
 aside > ul > li,	
-aside > ul > li > ul > li,
-aside > ul > li > div > p,
-aside > ul > li > div > a {
+aside > ul > li > ul > li {
 	position : relative;
-	font-size : 0.9em;
-	line-height : 1.35em;
 	}
 	
 aside > ul > li > a,
@@ -58,9 +63,39 @@ aside > ul > li > ul > li > a,
 aside > ul > li > div,
 aside > ul > li > ul > li > div {
 	position : inherit;
-	width : calc(170px + (100% - 170px)/2 + 50px);
-	padding-left : 50px;
-	padding-right : 50px;
+	width : calc(8.5em + (100% - 8.5em)/2 + 2.5em);
+	padding-left : 2.5em;
+	padding-right : 2.5em;
+	}
+	
+aside > ul > li > a > span > span,
+aside > ul > li > div > span > span,
+aside > ul > li > ul > li > a > span > span,
+aside > ul > li > ul > li > div > span > span,
+aside > ul > li > div > strong > span,
+aside > ul > li > div > p > span,
+aside > ul > li > div > a > span {
+	display : block;
+	}
+	
+aside > ul > li > a > span > span,
+aside > ul > li > div > span > span {
+	font-weight : 500;
+	}
+	
+aside > ul > li > a > span > span,
+aside > ul > li > div > span > span,
+aside > ul > li > div > strong > span {
+	font-size : 0.9em;
+	line-height : 1.35em;
+	}
+	
+aside > ul > li > ul > li > a > span > span,
+aside > ul > li > ul > li > div > span > span,
+aside > ul > li > div > p > span,
+aside > ul > li > div > a > span {
+	font-size : 0.8em;
+	line-height : 1.375em;
 	}
 	
 aside > ul > li > a,
@@ -81,7 +116,7 @@ aside > ul > li > div > p,
 aside > ul > li > div > a {
 	position : inherit;
 	display : block;
-	width : 170px;
+	max-width : 8.5em;
 	margin : 0 0 0 auto;
 	}
 
@@ -91,48 +126,49 @@ aside > ul > li > div > span,
 aside > ul > li > div > strong,
 aside > ul > li > div > p,
 aside > ul > li > div > a {	
-	padding-top : 13px;
-	padding-bottom : 13px;
+	padding-top : 0.65em;
+	padding-bottom : 0.65em;
 	}
 	
 aside > ul > li > a > span.icon::after,
 aside > ul > li > div > span.icon::after {
 	position : absolute;
-	top : 15px;
+	top : 0;
 	right : 100%;
 	z-index : 1;
-	width : 50px;
-	height : 20px;
-	content : "";
+	width : 2.1em;
 	background-repeat : no-repeat;
-	background-size : contain;
+	background-size : 1.2em auto;
 	background-position : 50% 50%;
-	}
-	
-aside > ul > li > a > span.icon.services::after,
-aside > ul > li > div > span.icon.services::after {
-	background-image : url("../img/services.svg?141120191231");
+	font-size : 1.2em;
+	font-family : "icomoon" !important;
+	text-align : center;
+	line-height : 2.1em;
 	}
 	
 aside > ul > li > a > span.icon.areas::after,
 aside > ul > li > div > span.icon.areas::after {
-	background-image : url("../img/areas.svg?141120191231");
+	content : "\e900";
 	}
 	
 aside > ul > li > a > span.icon.brends::after,
 aside > ul > li > div > span.icon.brends::after {
-	background-image : url("../img/brends.svg?141120191231");
+	content : "\e901";
+	}
+	
+aside > ul > li > a > span.icon.services::after,
+aside > ul > li > div > span.icon.services::after {
+	content : "\e902";
 	}
 	
 aside > ul > li > a + span,
 aside > ul > li > div + span {
 	position : absolute;
     top : 0;
-    left : calc(170px + (100% - 170px)/2);
+    left : calc(8.5em + (100% - 8.5em)/2);
     z-index : 10;
-    width : 50px;
-    height : 50px;
-    border-radius : 50%;
+    width : 2.5em;
+    height : 2.5em;
     cursor : pointer;
 	}
 	
@@ -143,7 +179,7 @@ aside > ul > li > div + span::after {
 	position : absolute;
     top : calc(50% - 1px);
     z-index : 10;
-    width : 10px;
+    width : 0.5em;
     height : 2px;
     content : "";
     background-color : rgba(180, 180, 180, 1);
@@ -154,17 +190,17 @@ aside > ul > li > a + span:hover::before,
 aside > ul > li > a + span:hover::after,
 aside > ul > li > div + span:hover::before,
 aside > ul > li > div + span:hover::after {
-	background-color : rgba(77, 72, 188, 1);
+    background-color : rgba(77, 72, 188, 1);
 	}
 
 aside > ul > li > a + span::before,
 aside > ul > li > div + span::before {
-   	right : 34px;
+   	right : calc(50% - 2px);
 	}
 	
 aside > ul > li > a + span::after,
 aside > ul > li > div + span::after {
-	left : 0;
+	left : calc(50% - 2px);
 	}
 
 aside > ul > li > a + span::after,	
@@ -192,37 +228,71 @@ aside > ul > li.selected > ul {
 	
 aside > ul > li > ul > li > a > span,
 aside > ul > li > ul > li > div > span {
-	padding-top : 9px;
-	padding-bottom : 9px;
+	padding-top : 0.45em;
+	padding-bottom : 0.45em;
 	padding-left : 0.5rem;
 	}
 	
 aside > ul > li > div > a {
-	border-radius : 5px;
-	border : solid 2px rgba(77, 72, 188, 1);
-	background-color : rgba(77, 72, 188, 0);
-	color : rgba(77, 72, 188, 1);
-	text-decoration : none;
-	text-align : center;
-	transition : all .25s ease;
+    border-radius : 5px;
+    background-color : rgba(77, 72, 188, 0);
+    color : rgba(77, 72, 188, 1);
+    text-decoration : none;
+    text-align : center;
+    transition : color .25s ease;
 	}
 	
 aside > ul > li > div > a:hover {
-	background-color : rgba(77, 72, 188, 1);
 	color : rgba(255, 255, 255, 1);
 	}
 	
-@media (min-width : 1201px) {
+aside > ul > li > div > a > span {
+	position : relative;
+	z-index : 3;
 	}
 	
-@media (min-width : 961px) and (max-width : 1200px) {
+aside > ul > li > div > a::after {
+	z-index : 1;
+	width : calc(100% - 4px);
+	height : calc(100% - 4px);
+	border : solid 2px rgba(77, 72, 188, 1);
+	}
+
+aside > ul > li > div > a::after,
+aside > ul > li > div > a::before {
+	display : block;
+	position : absolute;
+	top : calc(50% - 1.25em);
+	left : calc(50% - 4.25em);
+	border-radius : 5px;
+	content : "";
+	transition : all .25s ease;
 	}
 	
-@media (min-width : 721px) and (max-width : 960px) {
+aside > ul > li > div > a::before {
+	z-index : 2;
+	width : 100%;
+	height : 100%;
+	background-color : rgba(77, 72, 188, 1);
+	transform : scale(0);
+	opacity : 0;	
 	}
 	
-@media (min-width : 481px) and (max-width : 720px) {
+aside > ul > li > div > a:hover::before {
+	transform : scale(1);
+	opacity : 1;
 	}
 	
-@media (max-width : 480px) {
+@media (min-width : 961px) {
+	div.container > div.workspace > div.aside > div.box > div.header > a.logo {
+		height : 1.8em;
+		}
+	}
+	
+@media (max-width : 960px) {
+	div.container > div.workspace > div.aside > div.box > div.header {
+		height : 0;
+		padding : 0;
+		display : none;
+		}
 	}

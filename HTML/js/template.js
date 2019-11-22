@@ -20,10 +20,10 @@ function resize() {
 		asideWidth = Math.round(aside.parent().innerWidth()*0.3);
 		}
 	else {
-		asideWidth = Math.round(aside.parent().innerWidth() - 50);
+		asideWidth = "100%";
 		}	
 	if (!vhCSS) {
-		loadCSS('css/vh.css?' + $.now(), 'stylesheet');
+		loadCSS("css/vh.css?" + $.now(), "stylesheet");
 		vhCSS = true;
 		}
 	setTimeout(function() {
@@ -56,7 +56,7 @@ $(document).ready(function() {
 		if (!aside.hasClass("min") && aside.hasClass("max")) {
 			aside.removeClass("max").addClass("min");
 			aside.animate({
-  				width: 50
+  				width: "2.5em"
 				}, 250, function() {
 				baron__aside.update();
 				baron__article.update();

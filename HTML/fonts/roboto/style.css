@@ -3,9 +3,10 @@
 @font-face {
 	font-family : "Roboto";
 	font-display : swap;
-	src : 	local("Roboto Light"), 
-			local("Roboto-Light"), 
-			url("RobotoLight.eot"),
+  	src : 	local("Roboto Light"), 
+		  	local("Roboto-Light"), 
+			url("RobotoLight.eot");
+  	src : 	url("icomoon.eot?5y5iap#iefix") format("embedded-opentype"),
 			url("RobotoLight.eot?#iefix") format("embedded-opentype"),
 			url("RobotoLight.woff") format("woff"),
 			url("RobotoLight.ttf") format("truetype");
@@ -18,8 +19,8 @@
 	font-display : swap;
 	src : 	local("Roboto Regular"), 
 			local("Roboto-Regular"), 
-			url("RobotoRegular.eot"),
-			url("RobotoRegular.eot?#iefix") format("embedded-opentype"),
+			url("RobotoRegular.eot");
+  	src : 	url("RobotoRegular.eot?#iefix") format("embedded-opentype"),
 			url("RobotoRegular.woff") format("woff"),
 			url("RobotoRegular.ttf") format("truetype");
 	font-style : normal;
@@ -31,8 +32,8 @@
 	font-display : swap;
 	src : 	local("Roboto Medium"), 
 			local("Roboto-Medium"), 
-			url("RobotoMedium.eot"),
-			url("RobotoMedium.eot?#iefix") format("embedded-opentype"),
+			url("RobotoMedium.eot");
+  	src : 	url("RobotoMedium.eot?#iefix") format("embedded-opentype"),
 			url("RobotoMedium.woff") format("woff"),
 			url("RobotoMedium.ttf") format("truetype");
 	font-style : normal;
@@ -44,8 +45,8 @@
 	font-display : swap;
 	src : 	local("Roboto Bold"), 
 			local("Roboto-Bold"), 
-			url("RobotoBold.eot"),
-			url("RobotoBold.eot?#iefix") format("embedded-opentype"),
+			url("RobotoBold.eot");
+  	src : 	url("RobotoBold.eot?#iefix") format("embedded-opentype"),
 			url("RobotoBold.woff") format("woff"),
 			url("RobotoBold.ttf") format("truetype");
 	font-style : normal;
