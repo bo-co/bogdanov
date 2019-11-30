@@ -63,7 +63,7 @@ div.container > div.workspace > div.aside > div.ui-resizable-handle > ul {
 	border-radius : 5px;
 	list-style : none;
 	overflow : hidden;
-	transition : all .25s ease;
+	transition : all .3s ease;
 	}
 	
 div.container > div.workspace > div.aside > div.ui-resizable-handle > ul::after {
@@ -82,7 +82,7 @@ div.container > div.workspace > div.aside > div.ui-resizable-handle > ul::before
 	left : calc(50% - 1.25em);
 	border-radius : 5px;
 	content : "";
-	transition : all .25s ease;
+	transition : all .3s ease;
 	}
 	
 div.container > div.workspace > div.aside > div.ui-resizable-handle > ul::before {
@@ -113,10 +113,10 @@ div.container > div.workspace > div.aside > div.ui-resizable-handle > ul > li::a
     left : calc(50% - 1px);
     z-index : 10;
     width : 2px;
-    height : 0.5em;
+    height : 10px;
     content : "";
     background-color : rgba(77, 72, 188, 1);
-    transition : all .25s ease;
+    transition : all .3s ease;
     }
     
 div.container > div.workspace > div.aside > div.ui-resizable-handle > ul > li:hover::before,

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family : "Merriweather";
+	font-display : swap;
+	src : 	local("Merri Weather Bold"), 
+			local("Merriweather-Bold"),
+			url("Merriweather-Bold.eot");
+	src : 	url("Merriweather-Bold.eot?#iefix")format("embedded-opentype"),
+			url("Merriweather-Bold.woff") format("woff"),
+			url("Merriweather-Bold.ttf") format("truetype");
+	font-style : normal;
+	font-weight : 600;
+	}

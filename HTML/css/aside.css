@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 aside {
-	padding : 1rem 0;
+	padding : 0.5rem 0;
 	}
 
 aside,
@@ -102,8 +102,8 @@ aside > ul > li > a,
 aside > ul > li > ul > li > a {
 	display : block;
 	text-decoration : none;
-	color : rgba(180, 180, 180, 1);
-	transition : color .25s ease;	
+	color : rgba(60, 66, 73, 0.5);
+	transition : color .3s ease;	
 	}
 	
 aside > ul > li > a > span,
@@ -179,11 +179,11 @@ aside > ul > li > div + span::after {
 	position : absolute;
     top : calc(50% - 1px);
     z-index : 10;
-    width : 0.5em;
+    width : 10px;
     height : 2px;
     content : "";
-    background-color : rgba(180, 180, 180, 1);
-    transition : all .25s ease;
+    background-color : rgba(60, 66, 73, 0.5);
+    transition : all .3s ease;
 	}
 	
 aside > ul > li > a + span:hover::before,
@@ -239,7 +239,7 @@ aside > ul > li > div > a {
     color : rgba(77, 72, 188, 1);
     text-decoration : none;
     text-align : center;
-    transition : color .25s ease;
+    transition : color .3s ease;
 	}
 	
 aside > ul > li > div > a:hover {
@@ -266,7 +266,7 @@ aside > ul > li > div > a::before {
 	left : calc(50% - 4.25em);
 	border-radius : 5px;
 	content : "";
-	transition : all .25s ease;
+	transition : all .3s ease;
 	}
 	
 aside > ul > li > div > a::before {
