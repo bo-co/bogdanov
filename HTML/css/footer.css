@@ -196,6 +196,7 @@ ol.social > li > a {
 	border: solid 2px rgba(144, 152, 162, 1);
 	color: rgba(144, 152, 162, 1);
 	border-radius: 5px;
+	text-decoration: none;
 	transition: all .3s ease;
 }
 
