@@ -224,7 +224,7 @@ ol.social > li > a.facebook::after {
 	content: "\e904";
 }
 
-ol.social > li > a.vk::after {
+ol.social > li > a.behance::after {
 	content: "\e905";
 }
 

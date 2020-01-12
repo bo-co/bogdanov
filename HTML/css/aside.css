@@ -1,73 +1,74 @@
 @charset "UTF-8";
 
 aside {
-	padding : 0.5rem 0;
-	}
+	padding: 0.5rem 0;
+}
 
 aside,
 div.container > div.workspace > div.aside > div.box > div.header {
-	width : 100%;
-	min-width : 13.5em;
-	}
-	
+	width: 100%;
+	min-width: 13.5em;
+}
+
 div.container > div.workspace > div.aside > div.box > div.header {
-	padding : 0.5rem 0;
-	}
-	
+	padding: 0.5rem 0;
+}
+
 div.container > div.workspace > div.aside > div.box > div.header > a.logo {
-	width : 8.5em;
-	margin : 0 auto;
-	}
-	
+	width: 8.5em;
+	margin: 0 auto;
+	text-decoration: none;
+}
+
 div.container > div.workspace > div.aside > div.box > div.header > a.logo > span {
-	position : relative;
-	width : 100%;
-	height : 100%;
-	background-repeat : no-repeat;
-	background-size : contain;
-	background-position : 0% 50%;
-	background-image : url("../img/logo.svg?091020191529");
-	}
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 0% 50%;
+	background-image: url("../img/logo.svg?091020191529");
+}
 
 div.container > div.workspace > div.aside > div.box > div.header > a.logo,
 div.container > div.workspace > div.aside > div.box > div.header > a.logo > span {
-	display : block;
-	}
-	
+	display: block;
+}
+
 div.container > div.workspace > div.aside > div.box > div.header > a.logo > span::after {
-    position : absolute;
-    right : 0;
-    top : calc(50% - 1.3em);
-    color : rgba(60, 66, 73, 1);
-    font-size : 0.7em;
-    line-height : 1.3em;
-    white-space : pre;
-    content : "Студия Андрея\AБогданова";
-	}
+	position: absolute;
+	right: 0;
+	top: calc(50% - 1.3em);
+	color: rgba(60, 66, 73, 1);
+	font-size: 0.7em;
+	line-height: 1.3em;
+	white-space: pre;
+	content: "Студия Андрея\AБогданова";
+}
 
 aside > ul,
 aside > ul > li > ul {
-	width : 100%;
-	padding : 0;
-	margin : 0;
-	list-style : none;
-	}
-	
-aside > ul > li,	
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+aside > ul > li,
 aside > ul > li > ul > li {
-	position : relative;
-	}
-	
+	position: relative;
+}
+
 aside > ul > li > a,
 aside > ul > li > ul > li > a,
 aside > ul > li > div,
 aside > ul > li > ul > li > div {
-	position : inherit;
-	width : calc(8.5em + (100% - 8.5em)/2 + 2.5em);
-	padding-left : 2.5em;
-	padding-right : 2.5em;
-	}
-	
+	position: inherit;
+	width: calc(8.5em + (100% - 8.5em)/2 + 2.5em);
+	padding-left: 2.5em;
+	padding-right: 2.5em;
+}
+
 aside > ul > li > a > span > span,
 aside > ul > li > div > span > span,
 aside > ul > li > ul > li > a > span > span,
@@ -75,37 +76,37 @@ aside > ul > li > ul > li > div > span > span,
 aside > ul > li > div > strong > span,
 aside > ul > li > div > p > span,
 aside > ul > li > div > a > span {
-	display : block;
-	}
-	
+	display: block;
+}
+
 aside > ul > li > a > span > span,
 aside > ul > li > div > span > span {
-	font-weight : 500;
-	}
-	
+	font-weight: 500;
+}
+
 aside > ul > li > a > span > span,
 aside > ul > li > div > span > span,
 aside > ul > li > div > strong > span {
-	font-size : 0.9em;
-	line-height : 1.35em;
-	}
-	
+	font-size: 0.9em;
+	line-height: 1.35em;
+}
+
 aside > ul > li > ul > li > a > span > span,
 aside > ul > li > ul > li > div > span > span,
 aside > ul > li > div > p > span,
 aside > ul > li > div > a > span {
-	font-size : 0.8em;
-	line-height : 1.375em;
-	}
-	
+	font-size: 0.8em;
+	line-height: 1.375em;
+}
+
 aside > ul > li > a,
 aside > ul > li > ul > li > a {
-	display : block;
-	text-decoration : none;
-	color : rgba(60, 66, 73, 0.5);
-	transition : color .3s ease;	
-	}
-	
+	display: block;
+	text-decoration: none;
+	color: rgba(60, 66, 73, 0.5);
+	transition: color .3s ease;
+}
+
 aside > ul > li > a > span,
 aside > ul > li > ul > li > a > span,
 aside > ul > li > div > span,
@@ -114,185 +115,185 @@ aside > ul > li > div > strong,
 aside > ul > li > ul > li > div > strong,
 aside > ul > li > div > p,
 aside > ul > li > div > a {
-	position : inherit;
-	display : block;
-	max-width : 8.5em;
-	margin : 0 0 0 auto;
-	}
+	position: inherit;
+	display: block;
+	max-width: 8.5em;
+	margin: 0 0 0 auto;
+}
 
 aside > ul > li > strong,
 aside > ul > li > a > span,
 aside > ul > li > div > span,
 aside > ul > li > div > strong,
 aside > ul > li > div > p,
-aside > ul > li > div > a {	
-	padding-top : 0.65em;
-	padding-bottom : 0.65em;
-	}
-	
+aside > ul > li > div > a {
+	padding-top: 0.65em;
+	padding-bottom: 0.65em;
+}
+
 aside > ul > li > a > span.icon::after,
 aside > ul > li > div > span.icon::after {
-	position : absolute;
-	top : 0;
-	right : 100%;
-	z-index : 1;
-	width : 2.1em;
-	background-repeat : no-repeat;
-	background-size : 1.2em auto;
-	background-position : 50% 50%;
-	font-size : 1.2em;
-	font-family : "icomoon" !important;
-	text-align : center;
-	line-height : 2.1em;
-	}
-	
+	position: absolute;
+	top: 0;
+	right: 100%;
+	z-index: 1;
+	width: 2.1em;
+	background-repeat: no-repeat;
+	background-size: 1.2em auto;
+	background-position: 50% 50%;
+	font-size: 1.2em;
+	font-family: "icomoon" !important;
+	text-align: center;
+	line-height: 2.1em;
+}
+
 aside > ul > li > a > span.icon.areas::after,
 aside > ul > li > div > span.icon.areas::after {
-	content : "\e900";
-	}
-	
+	content: "\e900";
+}
+
 aside > ul > li > a > span.icon.brends::after,
 aside > ul > li > div > span.icon.brends::after {
-	content : "\e901";
-	}
-	
+	content: "\e901";
+}
+
 aside > ul > li > a > span.icon.services::after,
 aside > ul > li > div > span.icon.services::after {
-	content : "\e902";
-	}
-	
+	content: "\e902";
+}
+
 aside > ul > li > a + span,
 aside > ul > li > div + span {
-	position : absolute;
-    top : 0;
-    left : calc(8.5em + (100% - 8.5em)/2);
-    z-index : 10;
-    width : 2.5em;
-    height : 2.5em;
-    cursor : pointer;
-	}
-	
+	position: absolute;
+	top: 0;
+	left: calc(8.5em + (100% - 8.5em)/2);
+	z-index: 10;
+	width: 2.5em;
+	height: 2.5em;
+	cursor: pointer;
+}
+
 aside > ul > li > a + span::before,
 aside > ul > li > a + span::after,
 aside > ul > li > div + span::before,
 aside > ul > li > div + span::after {
-	position : absolute;
-    top : calc(50% - 1px);
-    z-index : 10;
-    width : 10px;
-    height : 2px;
-    content : "";
-    background-color : rgba(60, 66, 73, 0.5);
-    transition : all .3s ease;
-	}
-	
+	position: absolute;
+	top: calc(50% - 1px);
+	z-index: 10;
+	width: 10px;
+	height: 2px;
+	content: "";
+	background-color: rgba(60, 66, 73, 0.5);
+	transition: all .3s ease;
+}
+
 aside > ul > li > a + span:hover::before,
 aside > ul > li > a + span:hover::after,
 aside > ul > li > div + span:hover::before,
 aside > ul > li > div + span:hover::after {
-    background-color : rgba(77, 72, 188, 1);
-	}
+	background-color: rgba(77, 72, 188, 1);
+}
 
 aside > ul > li > a + span::before,
 aside > ul > li > div + span::before {
-   	right : calc(50% - 2px);
-	}
-	
+	right: calc(50% - 2px);
+}
+
 aside > ul > li > a + span::after,
 aside > ul > li > div + span::after {
-	left : calc(50% - 2px);
-	}
+	left: calc(50% - 2px);
+}
 
-aside > ul > li > a + span::after,	
+aside > ul > li > a + span::after,
 aside > ul > li.selected > a + span::before,
-aside > ul > li > div + span::after,	
+aside > ul > li > div + span::after,
 aside > ul > li.selected > div + span::before {
-    transform : rotate(-45deg);
-	}
+	transform: rotate(-45deg);
+}
 
-aside > ul > li > a + span::before,	
+aside > ul > li > a + span::before,
 aside > ul > li.selected > a + span::after,
-aside > ul > li > div + span::before,	
+aside > ul > li > div + span::before,
 aside > ul > li.selected > div + span::after {
-    transform : rotate(45deg);
-	}
-	
+	transform: rotate(45deg);
+}
+
 aside > ul > li > ul {
-	height : 0;
-	overflow : hidden;
-	}
-	
+	height: 0;
+	overflow: hidden;
+}
+
 aside > ul > li.selected > ul {
-	height : 100%;
-	}
-	
+	height: 100%;
+}
+
 aside > ul > li > ul > li > a > span,
 aside > ul > li > ul > li > div > span {
-	padding-top : 0.45em;
-	padding-bottom : 0.45em;
-	padding-left : 0.5rem;
-	}
-	
+	padding-top: 0.45em;
+	padding-bottom: 0.45em;
+	padding-left: 0.5rem;
+}
+
 aside > ul > li > div > a {
-    border-radius : 5px;
-    background-color : rgba(77, 72, 188, 0);
-    color : rgba(77, 72, 188, 1);
-    text-decoration : none;
-    text-align : center;
-    transition : color .3s ease;
-	}
-	
+	border-radius: 5px;
+	background-color: rgba(77, 72, 188, 0);
+	color: rgba(77, 72, 188, 1);
+	text-decoration: none;
+	text-align: center;
+	transition: color .3s ease;
+}
+
 aside > ul > li > div > a:hover {
-	color : rgba(255, 255, 255, 1);
-	}
-	
+	color: rgba(255, 255, 255, 1);
+}
+
 aside > ul > li > div > a > span {
-	position : relative;
-	z-index : 3;
-	}
-	
+	position: relative;
+	z-index: 3;
+}
+
 aside > ul > li > div > a::after {
-	z-index : 1;
-	width : calc(100% - 4px);
-	height : calc(100% - 4px);
-	border : solid 2px rgba(77, 72, 188, 1);
-	}
+	z-index: 1;
+	width: calc(100% - 4px);
+	height: calc(100% - 4px);
+	border: solid 2px rgba(77, 72, 188, 1);
+}
 
 aside > ul > li > div > a::after,
 aside > ul > li > div > a::before {
-	display : block;
-	position : absolute;
-	top : calc(50% - 1.25em);
-	left : calc(50% - 4.25em);
-	border-radius : 5px;
-	content : "";
-	transition : all .3s ease;
-	}
-	
+	display: block;
+	position: absolute;
+	top: calc(50% - 1.25em);
+	left: calc(50% - 4.25em);
+	border-radius: 5px;
+	content: "";
+	transition: all .3s ease;
+}
+
 aside > ul > li > div > a::before {
-	z-index : 2;
-	width : 100%;
-	height : 100%;
-	background-color : rgba(77, 72, 188, 1);
-	transform : scale(0);
-	opacity : 0;	
-	}
-	
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(77, 72, 188, 1);
+	transform: scale(0);
+	opacity: 0;
+}
+
 aside > ul > li > div > a:hover::before {
-	transform : scale(1);
-	opacity : 1;
-	}
-	
+	transform: scale(1);
+	opacity: 1;
+}
+
 @media (min-width : 961px) {
 	div.container > div.workspace > div.aside > div.box > div.header > a.logo {
-		height : 1.8em;
-		}
+		height: 1.8em;
 	}
-	
+}
+
 @media (max-width : 960px) {
 	div.container > div.workspace > div.aside > div.box > div.header {
-		height : 0;
-		padding : 0;
-		display : none;
-		}
+		height: 0;
+		padding: 0;
+		display: none;
 	}
+}
