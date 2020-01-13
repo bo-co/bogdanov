@@ -1,28 +1,80 @@
 @charset "UTF-8";
 
 article {
-	position : relative;
-	width : 100%;
-	}
-	
+	position: relative;
+	width: 100%;
+}
+
 article > div.content {
-	position : inherit;
-	max-width : 960px;
-	margin : 0 auto;
-	padding : 0.5rem 1rem;
-	}
-	
+	position: inherit;
+	padding: 0.5rem 1rem;
+}
+
+article > div.content > div {
+	position: inherit;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0.5rem 0;
+}
+
+article > div.content > div h1 {
+	position: inherit;
+	padding: 0 0 0.5rem 0;
+	text-transform: uppercase;
+	line-height: 1em;
+	color: rgba(0, 0, 0, 1);
+}
+
+article > div.content > div h1::before {
+	position: absolute;
+	top: calc(100% - 0.25rem + 2px);
+	left: calc(50% - 0.5rem);
+	z-index: 10;
+	width: 1rem;
+	height: 2px;
+	content: "";
+	background-color: rgba(77, 72, 188, 1);
+}
+
+article > div.content > div h1,
+article > div.content > div blockquote {
+	text-align: center;
+}
+
+article > div.content > div blockquote {
+	font-size: 1.2em;
+}
+
+article > div.content > div ul {
+	list-style: disc;
+}
+
 @media (min-width : 1201px) {
+	article > div.content > div > h1 {
+		font-size: 1.8em;
 	}
-	
+}
+
 @media (min-width : 961px) and (max-width : 1200px) {
+	article > div.content > div > h1 {
+		font-size: 1.7em;
 	}
-	
+}
+
 @media (min-width : 721px) and (max-width : 960px) {
+	article > div.content > div > h1 {
+		font-size: 1.6em;
 	}
-	
+}
+
 @media (min-width : 481px) and (max-width : 720px) {
+	article > div.content > div > h1 {
+		font-size: 1.5em;
 	}
-	
+}
+
 @media (max-width : 480px) {
+	article > div.content > div > h1 {
+		font-size: 1.4em;
 	}
+}

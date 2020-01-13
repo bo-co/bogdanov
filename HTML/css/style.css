@@ -13,11 +13,17 @@ body {
 }
 
 b,
-strong {
+strong,
+h1,
+h2,
+h3 {
 	font-weight: 600;
 	color: rgba(0, 0, 0, 1);
 }
 
+h1,
+h2,
+h3,
 .accent {
 	font-family: "Merriweather", Arial, Tahoma, Verdana, sans-serif;
 }
